@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gradient-background {
+    background: linear-gradient(329deg, white, #7897ff, #de73ff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(145, 198, 255, 0.271);
+    box-shadow: 0 0 20px rgba(57, 57, 57, 0.26);
+    filter: drop-shadow(8px);
+}
+
+.container .line {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid rgb(255, 0, 0);
+    width: 300px;
+    position: absolute;
+    visibility: hidden;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: all ease-in .2s;
+}
+
+
+.container .box {
+    border: 2px solid rgba(62, 109, 250, 0.564);
+    box-shadow: 0 0 4px 2px rgb(133, 190, 255);
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box .text {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    padding: 36px;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(101, 157, 255);
+}
+
+#box1 {
+    border-left: none;
+    border-top: none;
+}
+
+#box1 {
+    border-left: none;
+    border-top: none;
+}
+
+#box2 {
+    border-top: none;
+}
+
+#box3 {
+    border-right: none;
+    border-top: none;
+}
+
+#box4 {
+    border-left: none;
+}
+
+#box6 {
+    border-right: none;
+}
+
+#box7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+#box8 {
+    border-bottom: none;
+}
+
+#box9 {
+    border-right: none;
+    border-bottom: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.label {
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+
+.font{
+    font-family: cursive;
+}
